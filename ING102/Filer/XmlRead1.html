@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+
+        // Get the XML document
+        var Connect = new XMLHttpRequest();
+        Connect.open("GET", "XMLFile1.xml", false);
+        Connect.send(null);
+        // Place the response in an XML document 
+        var docX = Connect.responseXML;
+        var e = docX.getElementsByTagName("member");
+        // Get all the member elements and write the contents of the name tag
+        for (i = 0; i < e.length; i++) {
+            document.write(e[i].childNodes[0].nodeValue + "<br>");
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1>Script testing</h1>
+</body>
+</html>

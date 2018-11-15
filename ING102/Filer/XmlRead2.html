@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        // Get the XML document
+        var Connect = new XMLHttpRequest();
+        Connect.open("GET", "XMLFile1.xml", false);
+        Connect.send(null)
+        // Place the response in an XML document 
+        var docX = Connect.responseXML;
+        // Get the first <name> element content and display in <h1> style    
+        document.writeln("<h1>" + docX.getElementsByTagName("name")[0].textContent + "</h1>");
+
+        // Get all the member element contents and create a table dynamically
+        var e = docX.getElementsByTagName("member");
+        document.write("<table border='1' style='color:blue'>");
+        for (i = 0; i < e.length; i++) {
+            document.writeln("<tr><td>" + e[i].textContent + "</td></tr>");
+        }
+        document.write("</table>")
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<savnet>
+    <tittel>
+        En blank og en kopperfarget husnøkkel
+    </tittel>
+
+    <sted>
+        McDonald's Torgallmenningen
+    </sted>
+
+    <detaljer>
+        Eg mistet nøklene mine med McDonald's på Torgallmenningen Onsdag 8. November. Det henger også en blå
+        plastikkting til å ha eierinformasjon på.
+    </detaljer>
+
+    <dato>
+        Onsdag 8.November
+    </dato>
+
+    <kontakt>
+        email@example.com
+    </kontakt>
+
+    <id>Funnet1</id>
+
+    <tittel>
+        BMW nøkkel
+    </tittel>
+
+    <sted>
+        Torget
+    </sted>
+
+    <detaljer>
+        Mistet min BMW nøkkel, det er bare en enkelt BMW nøkkel med nøkkelring. Mistet den i dag 31.November.
+    </detaljer>
+
+    <dato>
+        31. November
+    </dato>
+
+    <kontakt>
+        email@example.com
+    </kontakt>
+
+    <id>Funnet2</id>
+
+    <tittel>
+        Nøkkelsett med 20 nøkler og en "ID-brikke"
+    </tittel>
+
+    <sted>
+        Bryggen
+    </sted>
+
+    <detaljer>
+        Mistet nøkkelsettet mitt bestående av 20 nøkler og en "ID-brikke" med navnet Ingvild på. Mistet de 20. Oktober
+        da jeg var en liten handletur på bryggen. Alle nøklene er blanke, det er varierende størrelser på nøklene og de
+        er festet sammen av flere nøkkelringer.
+    </detaljer>
+
+    <dato>
+        20.Oktober
+    </dato>
+
+    <kontakt>
+        email@example.com
+    </kontakt>
+
+    <id>Funnet3</id>
+</savnet>

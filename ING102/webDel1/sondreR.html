@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <!-- Bootstrap: http://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Kaller på w3 schools metoder-->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!--Legger til css-filen til html-prosjektet-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--Tittelen på nettleservinduet-->
+    <title>Sondre R</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Laster in JS kode fra annen fil -->
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+<!--Header som vi inkluderer fra en annen html fil slik at 1 forandring fører til forandring på alle sider-->
+<div w3-include-html="menuBar.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+<!--Hovedkroppen-->
+<section>
+    <!--danner et forsidebilde som er personlig for min side. -->
+    <div class="forsidebilde">
+        <abbr title="Forside av Sondre Rinde"><img
+                src="http://www.kxweb.no/kx/114/Image/Friidrett/2014/Framo/Sondre%2BKristoffer_Lop.jpg"
+                alt="Forsidebilde av Sondre R"></abbr>
+    </div>
+    <!--danner tekst over bildet-->
+    <div class="center">
+        <p>Sondre<br>Rinde</p>
+    </div>
+    <!--Lager en boks i midten der hvor alt skal ligge ryddig i-->
+    <div class="container">
+        <!--Boks på øvre del av container boksen med skrift i-->
+        <div class="feature">
+            <p>
+                <a href="index.html">Hjem hos FinnMinNøkkel.no</a> > <a href="#">Sondre Rinde</a>
+            </p>
+            <h1>Litt om Sondre Rinde</h1>
+            <p>
+                Jeg er en av <strong>programmererne</strong> i denne gruppa. Og alt det som gjøres,
+                skal rapporteres til lederen <a href="simenG.html">Simen</a>.
+            </p>
+
+            <h3>Dette er meg:</h3>
+            <br>
+            <abbr title="Sondre Rinde">
+                <img id="sondreGBilde"
+                     src="http://www.norna-salhus.no/wp-content/uploads/2017/02/DSC07370-e1486405096914.jpg"
+                     alt="sondre">
+            </abbr>
+        </div>
+        <!-- Nye bokser under øverste del. -->
+        <div class="column1">
+            <h3> Litt om meg selv:</h3>
+            <p>
+                Jeg er 19 år gammel, og kommer fra Bergen. Jeg ble født i Stavanger
+                den 28.01.98. Jeg er en aktiv mann som driver med friidrett på høyt
+                nasjonalt nivå. Jeg driver i hovedsak med hoppøvelser som tresteg og
+                lengde, men løper også korthekk.
+            </p>
+            <h3>Idretten</h3>
+            <p>
+                Jeg driver med friidrett for Norna salhus, og trener under Ketill hanstveit som har norgesrekord i
+                tresteg. Jeg har tidligere vært i gneist i mange år, hvor jeg drev både friidrett og fotball.
+                På fotballsiden har jeg noen bragder, har scoret golden goal 2 ganger som gav oss førsteplass i to
+                cupper, i tillegg scoret jeg det avgjørende målet mot NSA fra USA som gjorde at vi gikk videre til
+                sluttspill.
+            </p>
+        </div>
+        <div class="column2">
+            <h3>Nyttighet:</h3>
+            <p>
+                Jeg jobber med programmeringen. Eg er også ganske kreativ og har med denne hjulpet til med mange av
+                ideene
+                gjennom hele prosjektet. Jeg står også bak mange av elementer i prosjektplanleggingen.
+            </p>
+        </div>
+
+
+        <button onclick="topFunction()" id="scrollUp" title="Go to top">Gå til toppen</button>
+        <script type="text/javascript">
+            // når brukeren scroller 20px fra toppen, vis knappen
+            window.onscroll = function () {
+                scrollFunction()
+            };
+        </script>
+        <!-- Legger inn tabellen ved hjelp av en JavaScript funksjon -->
+        <div class="colomn3">
+            <div class="tabell">
+                <script type="text/javascript">
+                    leggTilTabell("tabeller/sondreR.xml");
+                </script>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--kontaktopplysninger-->
+<footer>
+    <p>
+        <!--Css validator-->
+        <a class="validator" href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                 alt="Valid CSS!"/>
+        </a>
+        Laget av: Rinduss 26.september 2017
+        <br>
+        Kontaktinformasjon: <a href="sondre.rinde@gmail.com">sondre.rinde@gmail.com</a>. Følg meg gjerne på sosiale
+        medier!
+        <!-- Sosial - navigation -->
+        <a href="https://www.facebook.com/sondre.rinde" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.snapchat.com/add/sondreor" target="_blank" class="fa fa-snapchat-ghost"></a>
+        <a href="https://www.instagram.com/sondreorinde/" target="_blank" class="fa fa-instagram"></a>
+    </p>
+</footer>
+</body>
+</html>

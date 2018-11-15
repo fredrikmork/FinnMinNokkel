@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <!-- Bootstrap: http://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Kaller på w3 schools metoder-->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Legger til css-filen til html-prosjektet-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <Title>Sondre G sin nettside</Title>
+    <!-- Laster in JS kode fra annen fil -->
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+<!--Header som vi includer fra en annen html fil slik at 1 forandring fører til forandring på alle sider-->
+<div w3-include-html="menuBar.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+<!--Kroppen-->
+<section>
+    <!--Forsidebiildet-->
+    <div class="forsidebilde">
+        <img src="bilder/Blokk.jpg" alt="Sondre i blokk"/>
+        <div class="center">
+            Sondre<br>Lindaas Gjesdal
+        </div>
+    </div>
+    <!--Boksen med all informasjonen osv. -->
+    <div class="container">
+        <div class="Feature">
+            <p>
+                <a href="index.html">Hjem hos FinnMinNøkkel.no</a> > <a href="#">Sondre Lindaas Gjesdal</a>
+            </p>
+            <h1>Litt om Sondre G</h1>
+            <p>
+                Eg er gruppens <strong>Risiko- og usikkerhetsansvarlig</strong> dvs. at eg følger beskjedene til <a
+                    href="simenG.html">Simen</a>.
+                <br>
+                Dette er siden som omhandler meg, mine interresser og litt av det eg gjør på.
+                <br>
+                Eg er 19 år og kommer litt utenfra Bergen fra ein plass som heiter Lindås og fungerer som boplass for
+                mange som jobber på oljeraffeneriet <a href="https://no.wikipedia.org/wiki/Mongstad" target=_blank>
+                Mongstad</a>.
+            </p>
+            <h2>Dette er meg!</h2>
+            <br>
+            <abbr title="Profil av Sondre G">
+                <img id="sondreGBilde" src="bilder/sondreG.jpg" alt="Sondre Lindaas Gjesdal">
+            </abbr>
+        </div>
+        <!--Generell info om meg-->
+        <div class="colomn1">
+            <h3>Fritidsinteresse</h3>
+            <p>
+                Interessen for Data og Informasjonsteknologi startet med Pappa som jobbet med data mye på heimekontor
+                heime.
+                Den fikk nytt liv før konfirmasjonen når eg bestemte meg for å bruke pengene på en stasjonær PC,
+                noe vennene mine fra skolen også gjorde. Disse vennene er venner for livet.
+                Vi har alle daglig kontakt og bruker den fritid vi måtte ha
+                ledig til å spille, prate og kødde med hverandre.<br> I tillegg er eg i forhold med ei jente som heter
+                Vilde.
+                Vi er såkalte "High School sweethearts", så vi møttes altså på videregående. Vilde er en stor del av
+                livet mitt
+                og når jeg er med hun kan jeg virkelig slappe av.
+                Utav respekt for Vildes ønske skriver jeg derfor ikke stort mer enn dette.
+            </p>
+        </div>
+        <!--Info om hvordan eg fant min plass i Friidretten-->
+        <div class="colomn2">
+            <h3>Friidrettsinteresse</h3>
+            <p>
+                Eg begynte på friidrett i 6.klasse og gikk til 7.klasse, men stoppet. I 10. klasse kom eg tilbake til
+                friidretten
+                og møtte tidlig Sondre R som eg konkurrerte ein del mot. Høsten 2016 begynte eg å trene med
+                sammarbeidsklubben Norna-Salhus
+                samtidig som Sondre R byttet klubb. Her blei eg skikkelig kjent med Rinde'n og Hoppgruppen som eg trener
+                med den dag i dag.
+                Noen av prestasjonene mine er klubbrekord på 100m, Finale i ungdomsmesterskap,
+                Semifinaler i jr.NM, deltakelse i hoved NM, samt medaljer på stafett fra både ungdomsmesterskap og
+                jr.NM.
+            </p>
+            <h3>Hoppgruppen</h3>
+            <p>
+                Selv om jeg er sprinter trener jeg med en hoppgruppe, dette hjelper meg i mitt svakeste element,
+                eksplosivitet. Treneren vår er Ketill Hanstveit som er norsk rekordholder i tresteg. Gjennom hoppgruppen
+                har jeg blitt en mye mer seriøs utøver og mangedoblet treningsmengden min.
+                hoppgruppen består av Høydehopperne: Elida, Hannah, Ingrid og Linnea, Lengdehopperen Benjamin,
+                Tresteghopperne: Guri, Julie, Mari, Rinde og Viljar, og Sprinterne: Brede og Sondre.
+                Vi trener for det meste i Leikvanghallen utafor Åsane ettersom at den har alt av treningsutstyr som vi
+                trenger pluss en styrkeavdeling. Alle i hoppgruppen kommer utrolig godt overens med hverandre, det er
+                ingen som bærer nag over hverandre
+                eller lignende. Vi kan være oss selv og dette gjør treningene til en skikkelig "Safe-haven" for oss.
+            </p>
+        </div>
+        <!-- Legger inn tabellen ved hjelp av en JavaScript funksjon -->
+        <div class="colomn3">
+            <div class="tabell" id="SondreTabell">
+                <script type="text/javascript">
+                    leggTilTabell("tabeller/sondreG.xml");
+                </script>
+            </div>
+        </div>
+        <div>
+            <button onclick="topFunction()" id="scrollUp" title="Go to top">Gå til toppen</button>
+            <script type="text/javascript">
+                // når brukeren scroller 20px fra toppen, vis knappen
+                window.onscroll = function () {
+                    scrollFunction()
+                };
+            </script>
+        </div>
+    </div>
+</section>
+<!--nedre del av siden-->
+<footer>
+    <p>
+        <a class="validator" href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Valid CSS!"/>
+        </a>
+        Laget av: Sondre G 26.september 2017
+        <br>
+        Kontaktinformasjon: <a href="mailto:Sondre.Gjesdal@gmail.com">Sondre.Gjesdal@gmail.com</a>. Følg meg gjerne på
+        sosiale medier!
+        <!-- SOCIAL - Nav -->
+        <a href="https://www.facebook.com/sondre.lindaasgjesdal" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.snapchat.com/add/sondrelg" target="_blank" class="fa fa-snapchat-ghost"></a>
+        <a href="https://www.instagram.com/sondregjesdal/" target="_blank" class="fa fa-instagram"></a>
+    </p>
+</footer>
+</body>
+</html>

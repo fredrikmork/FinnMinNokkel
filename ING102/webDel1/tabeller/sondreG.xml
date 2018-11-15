@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<friidrett>
+	<ovelse>
+		Stille lengde
+	</ovelse>
+	<pers>
+		2.74 m
+	</pers>
+	<ovelse>
+		Lengde
+	</ovelse>
+	<pers>
+		5.31 m
+	</pers>
+	<ovelse>
+		60 m
+	</ovelse>
+	<pers>
+		7.39 s 
+	</pers>
+	<ovelse>
+		100 m
+	</ovelse>
+	<pers>
+		11.24 s
+	</pers>
+	<ovelse>
+		200 m 
+	</ovelse>
+	<pers>
+		22.80 s
+	</pers>
+	<ovelse>
+		400 m
+	</ovelse>
+	<pers>
+		52.77 s
+	</pers>
+</friidrett>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <!-- Bootstrap: http://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Kaller på w3 schools metoder-->
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!--Tittelen på nettleservinduet-->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Legger til css-filen til html-prosjektet-->
+		<link rel="stylesheet" type="text/css" href="index.css">
+    <!--navnet på nettsiden-->
+    <title>Simen sin nettside</title>
+    <!-- Laster in JS kode fra annen fil -->
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+
+  <!--Header som vi includer fra en annen html fil slik at 1 forandring fører til forandring på alle sider-->
+  <div w3-include-html="menuBar.html"></div>
+		<script>
+			w3.includeHTML();
+		</script>
+  <!-- Hoveddelen -->
+  <section>
+
+    <!-- Forsidebilde -->
+    <div class="forsidebilde">
+      <abbr title = "Forsidebilde av Simen Gjerde"><img src="bilder/SimenForside.jpg" alt="Forsidebilde Simen Gjerde"></abbr>
+    </div>
+
+    <!-- Lager en boks i midten der hvor alt skal ligge ryddig i -->
+    <div class="container">
+      <div id="simenFeature">
+        <p>
+          <a href="index.html">Hjem hos FinnMinNøkkel.no</a> > <a href="#">Simen Gjerde</a>
+        </p>
+        <!-- Øverste paragraf -->
+        <h1>Litt om Simen Gjerde</h1>
+        <p>
+          Jeg er gruppens <strong>Leder</strong> og har som hovedoppgave å fordele arbeidsoppgaver og følge opp at disse blir gjort. Jeg har også et overordnet ansvar for at frister for prosjektet overholdes. Jeg har også noen kunnskaper om
+          <cite>Javascript</cite>, så implementering av dette har stort sett gått igjennom meg.
+        </p>
+        <!-- Det mindre bildet av meg selv -->
+        <h2>Et bilde av meg selv:</h2>
+        <br>
+          <abbr title="Bilde av Simen Gjerde">
+            <img id="simenBilde" src="bilder/simenG.jpg" alt="Simen Gjerde">
+          </abbr>
+      </div>
+
+      <!--Danner hovedcontaineren inn i deler under øverste del. -->
+      <div class="column1">
+      <h3>Om meg</h3>
+        <p>
+          Jeg liker veldig godt fjellturer, også lange turer med overnatting i telt og evt. fiske. I barndommen var jeg på Hardangervidden hver sommer og gikk på turer og fisket, så det er her interessen er kommet ifra. På fritiden liker jeg også godt å trene, gjøre skolearbeid og spille. Jeg har tidligere gått mange år på friidrett, og ved siden av er en tabell med noen av mine personlige rekorder.
+        </p>
+    </div>
+      <div class="column2">
+      <h3>Nyttighet</h3>
+        <p>
+          Jeg er altså lederen for prosjektetgruppen. Dette medbringer et ansvar ovenfor frister og fordeling av arbeidsoppgaver. Vi valgte å ha en leder i prosjektgruppen for bedre organisering. Som gruppens leder har jeg ansvar for å fordele arbeidsoppgaver passe på at de blir gjort. Jeg bestemmer altså ikke <i>hvordan</i> arbeidet utføres. Hvis det er spørsmål om styling så må dere kontakte <a href="fredda.html">Fredrik</a>. Mye annet av programmeringsarbeidet er gjort av <a href="sondreG.html">Sondre Gjesdal</a> og <a href="sondreR.html">Sondre Rinde</a>
+        </p>
+    </div>
+    <!-- Legger inn tabellen ved hjelp av en JavaScript funksjon -->
+    <div class="tabell" id="simenTabell">
+      <script type="text/javascript">
+        leggTilTabell("tabeller/simenG.xml");
+      </script>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h3>
+        Prosjektarbeidet
+      </h3>
+        <p>
+          Å jobbe med å utvikle en nettside har vært veldig lærerikt. Personlig har jeg lært mye om hvordan nettsider er bygget opp og forskjellige måter å utforme nettsider på. Jeg har også lært mye om Javascript, noe vi har brukt mye på siden. Javascript har hjulpet oss med å legge inn mye nyttige funksjoner, som dynamiske tabeller, knapper som vises når en scroller og søkefunksjoner.
+        </p>
+        <p>
+          Vi har jobbet med utviklingen av nettsiden som et prosjekt som innebærer blant annet planleggeing, underveisvurdering og prosjektstrategi. Vi lærte mye underveis i arbeidet, mye takket arbeidsmetoden i et prosjektarbeid. For eksempel fant vi tidlig ut at den opprinnelige ideskissen vi lagde var for omfattende, og vi måtte redusere denne. Som nevnt over valgte vi også å organisere oss med en prosjektleder som hadde ansvar for å fordele oppgaver. Dette førte til mye høyere effektivitet, da det var lettere å holde oversikt over hva som var blitt gjort, og hva som gjenstod. 
+        </p>
+    </div>
+
+
+      <div>
+      <button onclick="topFunction()" id="scrollUp" title="Go to top">Gå til toppen</button>
+      <script type="text/javascript">
+        // når brukeren scroller 20px fra toppen, vis knappen
+        window.onscroll = function() {scrollFunction()};
+      </script>
+    </div>
+  </div>
+  </section>
+
+  <!--kontaktopplysninger-->
+  <footer>
+    <p>
+      <a class="validator" href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="Valid CSS!" />
+      </a>
+      Laget av: Simen 26.september 2017
+      <br>
+      Kontaktinformasjon: <a href="mailto:simengjerde@hotmail.com">simengjerde@hotmail.com</a>.
+      Følg meg gjerne på sosiale medier!
+      <!-- SOCIAL - Nav -->
+      <a href="https://www.facebook.com/SimenGjerde" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://www.snapchat.com/add/simenhg97" target="_blank" class="fa fa-snapchat-ghost"></a>
+      <a href="https://www.instagram.com/simenhgjerde/" target="_blank" class="fa fa-instagram"></a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+		<!-- Bootstrap: http://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!--Kaller på w3 schools metoder-->
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<!--Legger til css-filen til html-prosjektet-->
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<!--Tittelen på nettleservinduet-->
+		<title>Vår nettside</title>
+		<!-- Laster in JS kode fra annen fil -->
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+		<div w3-include-html="menuBar.html"></div>
+			<!--henter en html fil: header som gjør det enkelt å forandre på bare headeren uten å gjøre på alle filene.-->
+			<script>
+				w3.includeHTML();
+			</script>
+
+		<section>
+			<!--Forsidebildet med søkefunksjon-->
+			<div class="forsidebilde">
+				<div w3-include-html="Slideshow.html"></div>
+				<script>w3.includeHTML();</script>
+				<!--<img src="bilder/nøkkel1.jpg" alt="Glemte nøkler"/>-->
+					<div class="center">
+						<div class="søk">
+							<h1 id="h1Index">Funnet/savnede nøkler?</h1>
+							<button class="lostAndFound" onclick="funnetFunction()">Funnet</button>
+							<button class="lostAndFound" onclick="savnetFunction()">Savnet</button>
+						</div>
+					</div>
+			</div>
+
+		</section>
+		<!--Forskjellig footer på alle sider så den forblir på hovedsidene-->
+		<footer>
+			<p>
+		    <a class="validator" href="http://jigsaw.w3.org/css-validator/check/referer">
+		      <img style="border:0;width:88px;height:31px"
+		           src="http://jigsaw.w3.org/css-validator/images/vcss"
+		           alt="Valid CSS!" />
+		    </a>
+				Laget av: <a href="om.html"> Gruppe 19 </a>
+				<br>
+				Kontakt informasjon: se under "Om".
+				<br>
+				FinnMinNøkkel.no 2017
+			</p>
+			<p>
+				Foto: <a href="fredda.html">Fredrik Mørk</a>, <a href="sondreG.html">Sondre Gjesdal</a>
+			</p>
+		</footer>
+</body>
+</html>

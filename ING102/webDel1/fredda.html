@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8">
+	<!-- Bootstrap: http://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!--Kaller på w3 schools metoder-->
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<!--Legger til css-filen til html-prosjektet-->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!--Tittelen på nettleservinduet-->
+	<title>Fredrik sin nettside</title>
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Laster in JS kode fra annen fil -->
+  <script src="JavaScript.js"></script>
+</head>
+<body>
+
+	<!--Header som vi includer fra en annen html fil slik at 1 forandring fører til forandring på alle sider-->
+	<div w3-include-html="menuBar.html"></div>
+		<script>
+			w3.includeHTML();
+		</script>
+
+	<!--Hovedkroppen-->
+  <section>
+
+		<!--danner et forsidebilde som er personlig for min side. -->
+		<div class="forsidebilde">
+			<img src="bilder/fredrik2.jpg" alt="Fredrik1"/>
+			<div class="center">Fredrik<br>Mørk</div>
+		</div>
+
+		<!-- Lager en boks i midten der hvor alt skal ligge ryddig i -->
+	  <div class="container">
+			<div class="feature">
+
+				<!--Oversikt over hvor man er på siden-->
+				<p>
+					<a href="index.html">Hjem hos FinnMinNøkkel.no</a> > <a href="#">Fredrik Mørk</a>
+				</p>
+				<h1>Litt om Fredrik Garseg Mørk</h1>
+			    <p>
+			      På denne nettsiden skal jeg fortelle litt om meg. Jeg er gruppens <strong>Sjef for Kode &amp; Design</strong>.
+						Jeg sjekker om alle sidene står i stil til hverandre og står som ansvar for <cite>CSS &amp; HTML delene</cite> av sidene og og hvordan oppsettet skal være.
+						For å ha en så profosjonell side som mulig skal det være lik styling på alle sidene.
+			    </p>
+
+				<!---->
+		    	<h2>Et bilde av meg selv:</h2>
+		      		<br>
+			    	<abbr title="Fredrik Mørk">
+			      	<img src="bilder/fredrik.jpg" alt="Fredrik"/>
+			    	</abbr>
+			</div>
+
+			<!--Danner hovedcontaineren inn i deler under øverste del. -->
+			<div class="column1">
+				<h3>Om meg</h3>
+		      <p>
+		        Jeg syns det er veldig gøy å gå lage nettsider. Denne har vi laget sammen.
+						Jeg har litt erfaring fra HTML &amp; CSS fra før av så det er jeg som
+						står til ansvar der. Min oppgave er å skape noe nytt på sidene og
+						implementere det i alle sider.
+		      </p>
+			</div>
+			<div class="column2">
+				<h3>Nyttighet</h3>
+		      <p>
+		        Jeg står for skjellettet av sidene. Oppbyggingen av nettsidene.
+		        Hvis dere vil gå til lederen er det <a href="simenG.html">Simen</a>.
+		      </p>
+			</div>
+			<div class="column3">
+
+      	<!-- Legger inn tabellen ved hjelp av en JavaScript funksjon -->
+      		<div class="tabell">
+       			<script type="text/javascript">
+          		leggTilTabell("tabeller/fredda.xml");
+        		</script>
+	    		</div>
+				</div>
+	  	</div>
+			<div>
+				<button onclick="topFunction()" id="scrollUp" title="Go to top">Gå til toppen</button>
+				<script type="text/javascript">
+					// når brukeren scroller 20px fra toppen, vis knappen
+					window.onscroll = function() {scrollFunction()};
+				</script>
+			</div>
+  </section>
+
+	<!--kontaktopplysninger-->
+  <footer>
+    <p>
+			<!--Css validator-->
+			<a class="validator" href="http://jigsaw.w3.org/css-validator/check/referer">
+    		<img style="border:0;width:88px;height:31px"
+        	src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        	alt="Valid CSS!" />
+    	</a>
+      Laget av: Fredrik 12/11/2017
+      <br>
+      Kontaktinformasjon: <a href="mailto:fredrik.1997@hotmail.com">fredrik.1997@hotmail.com</a>. Følg meg gjerne på sosiale medier!
+			<!-- Sosial - navigation -->
+			<a href="https://www.facebook.com/FreddaJIY" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.snapchat.com/add/freddag" target="_blank" class="fa fa-snapchat-ghost"></a>
+			<a href="https://www.instagram.com/fredrikgmork/" target="_blank" class="fa fa-instagram"></a>
+		</p>
+  </footer>
+
+</body>
+</html>

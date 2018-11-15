@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<funnet>
+    <tittel>
+        Nøkkelsett m/kopperfarget husnøkkel og volvonøkkel
+    </tittel>
+    <plassering>
+        Olav Kyrresgate
+    </plassering>
+
+    <detaljer>
+        Nøkkelsettet ble funnet i Olav Kyrres gate ved den sørvestlige utgangen til Galleriet i 16 tiden tirsdag
+        31.oktober.
+    </detaljer>
+
+    <hentested>
+        Vaskerelven 1. evt sendes.
+    </hentested>
+
+    <dato>
+        Tirsdag 31.oktober
+    </dato>
+
+
+    <kontakt>
+        email@example.com
+    </kontakt>
+
+    <id>Funnet1</id>
+
+    <tittel>
+        Audi nøkkel
+    </tittel>
+
+    <plassering>
+        Festplassen
+    </plassering>
+
+    <detaljer>
+        Nøkkelen ble funnet busstoppet på festplassen, liggenes benken på busstoppet.
+    </detaljer>
+
+    <hentested>
+        Høyskolen på Vestlandet, Kronstad
+    </hentested>
+
+    <dato>
+        31.oktober
+    </dato>
+
+    <kontakt>
+        email@example.com
+    </kontakt>
+
+    <id>Funnet2</id>
+
+    <tittel>
+        Enkel "gullfarget" nøkkel
+    </tittel>
+
+    <plassering>
+        Rema 1000 Haukeland
+    </plassering>
+
+    <detaljer>
+        Nøkkel ble funnet ved kassen på Rema 1000 Haukeland. Det er bare en enkelt nøkkel, vanlig størrelse etter egen mening.
+    </detaljer>
+
+    <hentested>
+        Busstoppet på Minde mot Sentrum
+    </hentested>
+
+    <dato>
+        31.oktober
+    </dato>
+
+    <kontakt>
+        email@example.com
+    </kontakt>
+
+    <id>Funnet3</id>
+
+</funnet>
